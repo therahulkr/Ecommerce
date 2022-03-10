@@ -3,23 +3,25 @@ import "./Footer.css"
 
 const Footer = () => {
   return (
-    <footer id="details">
+      <section id="details">
 
-    <div className="number"> 
-        <div className="logo "><img src={require("../images/Profile.png")}/></div>
+          <div className="number">
+          <a className="webname" href="/" style={{
+              width:"30%"
+          }}>
+              Ecommerce
+          </a>
+              <div id="inner">
+              <h1>Contact Details:</h1>
+                  <ol>
+                      <li>Rahul Kumar</li>
+                      <li>8178595005</li>
+                      <li>rk19980555@gmail.com</li>
+                  </ol>
+              </div>
+          </div>
 
-        <div id="inner">
-        <h1>Contact Details</h1>
-            <ol>
-                <li>Rahul Kumar</li>
-                <li>Contact number:8178595005</li>
-                <li>Instagram : @therahul_kr</li>
-            </ol>
-        </div>
-        
-    </div>
-
-    <div id="icon">
+          <div id="icon">
                 <img src={require('../images/whitapp/fblogo.jpeg')}/>
                 <img src={require('../images/whitapp/instalogo.jpeg')}/>
                 <img src={require('../images/whitapp/ytubelogo.jpeg')}/>
@@ -27,10 +29,11 @@ const Footer = () => {
                 <a href="#join"><img id="waimg" src={require('../images/whitapp/wa.jpeg')}/></a>
 
     </div>
-    
 
-</footer>
+
+      </section>
   );
 };
 
 export default Footer;
+
