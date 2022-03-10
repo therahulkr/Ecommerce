@@ -6,13 +6,17 @@
 }
 
 #navigation{
-    display:flex;
-    color: white;
-    width: 100%;
-    height: 10vh;
-    position: fixed;
-    justify-content: space-around;
-    
+  display:flex;
+  align-items: center;
+  color: black;;
+  width: 100%;
+  height: 5vmax;
+  position:sticky;
+  font-size:1rem;
+  top:0px;
+    left:0px;
+    background-color:black;
+    /* opacity: 0.85; */
 }
   
   #navigation::before{
@@ -98,16 +102,16 @@
   
   
   #searchbar input[type="text"]{
-    width: 60%;
-    padding: 8px;
+    width: 100%;
+    padding: 5px;
     border: 0px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     /* box-shadow: 0 0 10px rgba(0,0,0,0.274); */
   }
   #searchbar input[type="submit"]{
-    width: 10%;
-    padding: 8px;
+    width: 15%;
+    padding: 5px;
     border: 0px ;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
@@ -115,6 +119,12 @@
 
   #searchbar input[type="submit"]:hover{
     background-color: tomato;
+  }
+
+  #phelasection{
+    width: 60%;
+    display: flex;
+    align-items: center;
   }
 
   .dropbtn {
@@ -170,32 +180,26 @@
   
 
 
-  @media screen and (max-width:1000px) {
-       #heading{
-         display: none;
-       }
-       /* #navigation{
-         flex-direction: column;
-       } */
-       #site-name{
-          width: 25%;
-       }
-       #searchbar{
-         width: 50%;
-       }
-       #cart{
-          width: 25%;
-       }
-       @media screen and (max-width:600px){
-         
-        #site-name{
-          width: 40%;
-       }
-       #searchbar{
-         width: 40%;
-       }
-       #cart{
-          width: 20%;
-       }
-       }
+  @media only screen and (max-width: 750px) {
+    #navigation{
+        height: 10vmax;
+        display: block;
+        position: fixed;
+    }
+    
+    #heading {
+      width: 100%;
+      display: flex;
+      height:5vmax;
+      justify-content: space-around;
+      align-items: center;
+    }
+    #phelasection{
+      padding-top: 8px;
+      width: 100%;
+      justify-content: space-around;
+    }
+    #searchbar{
+      width: 60%;
+   }
   }
