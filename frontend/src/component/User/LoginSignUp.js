@@ -109,7 +109,7 @@ const LoginSignUp = () => {
     }
   };
   return <Fragment>
-          <Header/>
+    <div className='back'></div>
           <div className="LoginSignUpContainer">
             <div className="LoginSignUpBox">
               <div>
