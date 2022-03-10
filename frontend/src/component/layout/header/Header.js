@@ -45,31 +45,23 @@ const Header = () => {
 
 return (
     <nav id="navigation">
-        
-            <a href="/"id="site-name">Ecommerce</a>
+        <div id='phelasection'>
+            <Link className="webname" to="/">
+            Ecommerce
+        </Link>
             {/* <img
             // className="speedDialIcon"
             src={user.avatar.url ? user.avatar.url : "/Profile.png"}
             alt="Profile"
           /> */}
-          
+          <Search/>
+          </div>
         <ul id = "heading">
                 <li><Link to="/">HOME</Link></li>
                 <li><Link to="/about">ABOUT</Link></li>
                 <li><Link to="/products">PRODUCTS</Link></li>
                 <li><a href="#details">CONTACT-US</a></li>
-                {/* <li>{isAuthenticated && <a onClick={logoutUser}>LOG-OUT</a>}</li> */}
-        </ul>
-        
-            
-            {/* <div id="searchbar"> */}
-        <Search/>
-                {/* </div> */}
-                <div id='cart'>
-
-                    {/* <i className="fa fa-cart-plus fa-2x"></i> */}
-                    
-                    {!isAuthenticated?(<Link to="/login" ><ExitToAppIcon /></Link>):
+                {!isAuthenticated?(<Link to="/login" ><ExitToAppIcon /></Link>):
                     (<div> 
                       <div className="dropdown">
                     <div className="dropbtn">
@@ -87,8 +79,14 @@ return (
 
                     </div>)
                     } 
-
-                </div>
+                {/* <li>{isAuthenticated && <a onClick={logoutUser}>LOG-OUT</a>}</li> */}
+        </ul>
+        
+            
+            {/* <div id="searchbar"> */}
+        
+                {/* </div> */}
+               
 
               
     </nav>
